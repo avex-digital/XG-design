@@ -1,0 +1,271 @@
+@charset "utf-8";
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+.header-logo {
+  padding: 20px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-logo {
+    padding: 25px 60px 30px;
+  }
+}
+
+.header-logo img {
+  width: 26px;
+  vertical-align: bottom;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-logo img {
+    width: 38px;
+  }
+}
+
+.contents {
+  margin-bottom: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contents {
+    width: 920px;
+    margin: 0 auto 100px;
+  }
+}
+
+.contents__title {
+  margin: 0 auto 8px;
+  padding: 0 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contents__title {
+    margin: 0 auto 40px;
+  }
+}
+
+.contents__sub-title {
+  margin: 0 auto 24px;
+  padding: 0 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contents__sub-title {
+    margin: 0 auto 40px;
+  }
+}
+
+.contents__title img,
+.contents__sub-title img {
+  width: 100%;
+}
+
+.title-img-pc {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .title-img-pc {
+    display: block;
+  }
+
+  .title-img-sp {
+    display: none;
+  }
+}
+
+.message-video .contents__title {
+  max-width: 320px;
+}
+
+@media only screen and (min-width: 768px) {
+  .message-video .contents__title {
+    max-width: 667px;
+  }
+}
+
+.message-video .contents__sub-title {
+  max-width: 350px;
+}
+
+@media only screen and (min-width: 768px) {
+  .message-video .contents__sub-title {
+    max-width: 917px;
+  }
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+@media only screen and (min-width: 768px) {
+  .video-wrapper {
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+
+.whats .contents__sub-title {
+  max-width: 266px;
+}
+
+@media only screen and (min-width: 768px) {
+  .whats .contents__sub-title {
+    max-width: 338px;
+  }
+}
+
+.whats__info {
+  font-family: 'Hiragino Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #CCCCCC;
+  padding: 0 20px 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .whats__info {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    padding: 0 10px 30px;
+  }
+}
+
+.whats__btn {
+  text-align: center;
+}
+
+.whats__btn-link {
+  display: inline-block;
+  font-family: 'Hiragino Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.07em;
+  color: #000000;
+  background: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 12px 40px;
+  position: relative;
+  text-decoration: none;
+}
+
+.whats__btn-link img {
+  width: 12px;
+  height: 12px;
+  margin-right: 16px;
+}
+
+.download .contents__sub-title {
+  max-width: 260px;
+}
+
+@media only screen and (min-width: 768px) {
+  .download .contents__sub-title {
+    max-width: 331px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .store-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 630px;
+    margin: 0 auto;
+  }
+}
+
+.store-button>.store-apple,
+.store-button>.store-google {
+  display: none;
+}
+
+.store-button>.store-apple.show,
+.store-button>.store-google.show {
+  display: block;
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .store-button>.store-apple.show,
+  .store-button>.store-google.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .store-button>.store-apple.show {
+    max-width: 270px !important;
+    margin-right: 50px;
+  }
+
+  .store-button>.store-google.show {
+    max-width: 306px !important;
+  }
+}
+
+.store-button>.store-apple.show a,
+.store-button>.store-google.show a {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .store-button>.store-apple.show a,
+  .store-button>.store-google.show a {
+    margin-bottom: 30px;
+  }
+}
+
+.store-button>.store-apple.show img,
+.store-button>.store-google.show img {
+  width: 100%;
+}
+
+.store-button img.store-qr {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .store-button img.store-qr {
+    display: block;
+    width: 150px !important;
+  }
+}
+
+.footer {
+  text-align: center;
+  font-family: 'Hiragino Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 15px;
+  color: #FFFFFF;
+  padding-bottom: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    font-size: 14px;
+    line-height: 21px;
+    padding-bottom: 14px;
+  }
+}
