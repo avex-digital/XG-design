@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Secret Special Voice Message from XG</title>
+	<meta name="description" content="Secret Special Voice Message from XG">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5">
+	<link rel="icon" href="/static/front/img/favicon.ico">
+	<!-- <link rel="apple-touch-icon" href="./static/kcon2023/assets/img/apple-touch-icon.png"> -->
+	<link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+	<link rel="stylesheet" href="./static/kcon2023/css/style.css">
+</head>
+
+<body>
+	<div class="header-logo"><img src="./static/kcon2023/img/logo.png" alt=""></div>
+	<div class="contents message-video">
+		<div class="contents__title"><img src="./static/kcon2023/img/title_sp.png" alt="" class="title-img-sp"><img src="./static/kcon2023/img/title_pc.png"
+				alt="" class="title-img-pc"></div>
+		<div class="contents__sub-title"><img src="./static/kcon2023/img/subtitle_sp.png" alt="" class="title-img-sp"><img
+				src="./static/kcon2023/img/subtitle_pc.png" alt="" class="title-img-pc"></div>
+		<div class="video-wrapper">
+			<video src="dummy" poster="https://placehold.jp/cccccc/666666/1280x720.png?text=video" class="video"></video>
+		</div>
+	</div>
+	<div class="contents whats">
+		<div class="contents__sub-title"><img src="./static/kcon2023/img/whats_sp.png" alt=""></div>
+		<div class="whats__info">XG OFFICIAL FANCLUB
+			"ALPHAZ"は、全世界向けのグローバル・ファンクラブ。ALPHAZ内でしか見ることができない映像コンテンツやメンバーブログ、ファン同士やメンバーとも交流の出来るコミュニティルームをはじめ、様々なコンテンツでXGと全世界のファンが共鳴し合う空間となっている。
+		</div>
+		<div class="whats__btn"><a href="" class="whats__btn-link"><img src="./static/kcon2023/img/more.svg" alt="">詳しくはこちら / 入会</a></div>
+	</div>
+	<div class="contents download">
+		<div class="contents__sub-title"><img src="./static/kcon2023/img/download_sp.png" alt=""></div>
+
+		<div class="store-button">
+			<div class="store-apple"><a href="#"><img src="./static/kcon2023/img/app-store-badge.png" class="badge-apple"></a><img
+					src="./static/kcon2023/img/qr_app_store.png" alt="" class="store-qr"></div>
+			<div class="store-google"><a href="#"><img src="./static/kcon2023/img/google-play-badge.png" class="badge-google"></a><img
+					src="./static/kcon2023/img/qr_google_play.png" alt="" class="store-qr"></div>
+		</div>
+	</div>
+	<div class="footer">powered by PASCH ©XGALX</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- iOS/Android判断用script -->
+	<script>
+		(function ($) {
+			var ua = navigator.userAgent;
+			if (ua.indexOf('iPhone') > 0 || ua.indexOf('iPad') > 0) {
+				$(".store-button > .store-apple").addClass("show");
+			} else if (ua.indexOf('Android') > 0) {
+				$(".store-button > .store-google").addClass("show");
+			} else {
+				$(".store-button > .store-apple").addClass("show");
+				$(".store-button > .store-google").addClass("show");
+			}
+		})(jQuery);
+	</script>
+</body>
+
+</html>
