@@ -268,7 +268,7 @@ nav .navbar-brand #header-logo {
   height: 100%;
   background-size: contain;
   background-position: left;
-  background-image: url("../img/logo_2.png");
+  background-image: url("/static/front/img/logo_2.png");
   background-repeat: no-repeat;
 }
 nav .burger-btn,
@@ -603,11 +603,18 @@ div.guidance .app-contents-wrapper {
   justify-content: center;
 }
 
+div.guidance .app-contents-wrapper.contents {
+    margin: 0;
+}
 @media only screen and (min-width: 768px) {
   div.guidance .app-contents-wrapper {
     margin: 0 auto 138px;
   }
+  div.guidance .app-contents-wrapper.contents {
+    margin: 0;
+  }
 }
+
 div.guidance .app-contents-title {
   width: 100%;
   max-width: unset;
@@ -1760,6 +1767,12 @@ div.guidance .card .card-body .card-info {
   background: #222222;
   border-radius: 0 0 6px 6px;
   padding: 20px;
+  height: 215px;
+}
+@media only screen and (max-width: 699px) {
+  div.guidance .card .card-body .card-info {
+    height: auto;
+  }
 }
 
 .join-alphaz {
@@ -1997,9 +2010,14 @@ div.guidance .card .card-body .card-info {
     width: 150px;
   }
 }
+
 .button-wrapper {
   margin-bottom: 40px;
 }
 .button-wrapper .campaign-btn {
   text-align: center;
+}
+
+.top_video {
+  height: 90vh;
 }
