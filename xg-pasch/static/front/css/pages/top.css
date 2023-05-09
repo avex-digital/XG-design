@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/*
+* XG用の共通スタイリング
+*/
+
+nav {
+  background: linear-gradient(180deg, #000000E6 0%, #15151599 45%, #24242433 79%, #54545400 100%);
+}
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #242424;
+}
+body.toppage {
+  animation: fadeOut 0.1s forwards;
+}
+@keyframes  fadeOut {
+  0% {
+  background-image: transparent;
+  }
+  100% {
+  background-image: url("../../img/web_top_sp.jpeg");
+  }
+}
+@media  only screen and (min-width: 768px) {
+  @keyframes  fadeOut {
+  0% {
+      background-image: transparent;
+  }
+  100% {
+      background-image: url("../../img/web_top.jpeg");
+  }
+  }
+}
+.top-page-error {
+  background-color: rgba(249,214,213,0.8);
+  border: none;
+  /* border-color: rgba(249,214,213,0.4); */
+}
+/* body.toppage .navbar,
+body.toppage .top-contents,
+body.toppage .footer {
+  opacity: 0;
+} */
+body.toppage.is-active .navbar,
+body.toppage.is-active .footer,
+body.toppage.is-active .top-contents {
+  opacity: 1;
+}
+#lang-code-select {
+  background-color: transparent!important;
+}
+#lang-code-select li {
+  background-color: transparent!important;
+}
+#app {
+  background-color: rgba(000,0,0,0.25);
+}

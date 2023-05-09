@@ -1,0 +1,458 @@
+@charset "UTF-8";
+/*!
+ * 全ルートの共通スタイリング
+ */
+/****************************************************************************************
+ * スタイル割り当て
+ ****************************************************************************************/
+* {
+  font-family: Hiragino Sans, sans-serif;
+}
+
+body {
+  width: 100vw;
+  background-color: #F7F7F7;
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+}
+
+.flash-message-last {
+  margin-bottom: 0;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.chatta-main {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.chatta-card-title,
+.chatta-card-subtitle {
+  font-size: 20px;
+  letter-spacing: 0;
+  color: #222222;
+  opacity: 1;
+  font-weight: 600;
+}
+
+.chatta-card-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.chatta-card-title-small {
+  font-size: 14px;
+  color: #666666;
+}
+
+.chatta-login-purple {
+  width: 100%;
+  background: #8031A7 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+  color: #fff;
+  height: 50px;
+}
+.chatta-login-purple:hover {
+  color: #fff;
+  background-color: #5f0e87;
+}
+
+.btn-apple {
+  color: #fff;
+  background-color: #000;
+  width: 100%;
+  height: 40px;
+}
+.btn-apple:hover {
+  color: #fff;
+}
+
+.chatta-login-error {
+  color: #C30000;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.chatta-card {
+  padding: 40px 30px;
+}
+
+.chatta-card-bottom {
+  font-size: 12px;
+}
+.chatta-card-bottom a {
+  color: #007AFF;
+}
+
+.chatta-card-body {
+  padding: 0;
+}
+.chatta-card-body input, .chatta-card-body select {
+  height: 45px;
+  font-size: 14px;
+}
+.chatta-card-body input::-webkit-input-placeholder {
+  color: #A3A3A3;
+}
+.chatta-card-body input::-moz-placeholder {
+  color: #A3A3A3;
+}
+.chatta-card-body input:-ms-input-placeholder {
+  color: #A3A3A3;
+}
+.chatta-card-body input::-ms-input-placeholder {
+  color: #A3A3A3;
+}
+.chatta-card-body input::placeholder {
+  color: #A3A3A3;
+}
+.chatta-card-body .twitter-btn {
+  font-size: 20px;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  background-color: #1DA1F2;
+}
+.chatta-card-body .form-control:focus {
+  color: #495057;
+  border: 1px solid #ced4da;
+  box-shadow: none;
+}
+.chatta-card-body .chatta-form-email,
+.chatta-card-body .chatta-form-password {
+  position: relative;
+  color: #E3E3E3;
+  font-size: 20px;
+}
+.chatta-card-body .chatta-form-email:before {
+  content: "\F0E0";
+}
+.chatta-card-body .chatta-form-password:before {
+  content: "\F084";
+}
+.chatta-card-body .chatta-form-email:before,
+.chatta-card-body .chatta-form-password:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  left: 10px;
+  position: absolute;
+  top: 7px;
+}
+.chatta-card-body .chatta-form-email input,
+.chatta-card-body .chatta-form-password input {
+  padding-left: 40px;
+}
+.chatta-card-body .invalid-feedback {
+  font-size: 12px;
+  color: #C30000CC;
+}
+.chatta-card-body [type=radio]:checked,
+.chatta-card-body [type=radio]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+.chatta-card-body [type=radio]:checked + label,
+.chatta-card-body [type=radio]:not(:checked) + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #212529;
+}
+.chatta-card-body [type=radio]:checked + label:before,
+.chatta-card-body [type=radio]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+.chatta-card-body [type=radio]:checked + label:after,
+.chatta-card-body [type=radio]:not(:checked) + label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #3490dc;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  border-radius: 100%;
+  transition: all 0.2s ease;
+}
+.chatta-card-body [type=radio]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+.chatta-card-body [type=radio]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+.chatta-card-body .chatta-btn-dark {
+  font-size: 18px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chatta-card-body .chatta-btn-small-dark {
+  font-size: 18px;
+  max-width: 260px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chatta-card-body .chatta-btn-white {
+  font-size: 18px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chatta-card-body .chatta-btn-small-white {
+  font-size: 18px;
+  max-width: 260px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chatta-card-body .chatta-create-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #CA1275;
+  height: 50px;
+  font-size: 16px;
+}
+.chatta-card-body .chatta-create-btn:hover {
+  color: #ffffff;
+  background-color: #b30e67;
+}
+.chatta-card-body .chatta-create-btn:focus {
+  box-shadow: none;
+}
+.chatta-card-body .chatta-form-hint-text {
+  color: #666666;
+  font-size: 9px;
+}
+.chatta-card-body .create-complete {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.chatta-btn-dark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #000000;
+  height: 70px;
+  font-size: 24px;
+  margin: 0 auto;
+  min-width: 150px;
+}
+.chatta-btn-dark:hover {
+  color: #ffffff;
+}
+
+.chatta-btn-white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  background-color: #ffffff;
+  height: 70px;
+  font-size: 24px;
+  margin: 0 auto;
+  min-width: 150px;
+  border-color: #000000;
+}
+.chatta-btn-white:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/**
+  ヘッダーの設定
+ */
+.chatta-navbar {
+  width: 100%;
+  max-width: 1240px;
+  min-height: 60px;
+  margin: auto;
+}
+
+/**
+  フッターの設定
+ */
+footer {
+  margin-top: auto;
+}
+
+.footer-top {
+  background-color: #242424;
+  min-height: 40px;
+  padding: 10px;
+}
+
+.footer-top .row,
+.footer-bottom .row {
+  width: 100%;
+  max-width: 1240px;
+}
+
+.footer-top-items div {
+  padding: 10px;
+}
+
+.footer-top a {
+  color: #fff;
+  text-underline: none;
+}
+
+.footer-bottom {
+  color: #fff;
+  background-color: #000000;
+  height: 110px;
+}
+
+.footer-official-link {
+  border-color: #9561e2;
+}
+
+.footer-official-link:link {
+  color: #8031A7;
+}
+
+.footer-official-link:visited {
+  color: #9561e2;
+}
+
+.footer-sns-icons-wrapper {
+  padding-left: 0;
+}
+.footer-sns-icons-wrapper .footer-sns-icons {
+  color: #ffffff;
+  font-size: 30px;
+}
+.footer-sns-icons-wrapper .footer-sns-icons:hover {
+  color: #e3e3e3;
+  text-decoration: none;
+}
+
+.header-text {
+  border-left: solid 5px #D00070;
+  padding: 0 0.5em;
+  color: #666666;
+}
+
+.account-list-item-header {
+  font-size: 18px;
+  color: #666666;
+}
+
+.account-list-item-border {
+  border: none;
+}
+
+.font-color-gray {
+  color: #a3a3a3;
+}
+
+.icon-color-gray {
+  color: #BCBCBC;
+}
+
+/**
+  このスタイルはtopページのみに適用される
+ */
+.monsta-x-top-wrapper {
+  /* PC */
+  /* スマホ */
+}
+.monsta-x-top-wrapper #dropdownMenuButton.btn {
+  color: #9ba2ab;
+}
+.monsta-x-top-wrapper .btn-about {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.monsta-x-top-wrapper .btn-about:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.monsta-x-top-wrapper .bg-dark {
+  background-color: black;
+}
+.monsta-x-top-wrapper .cover-img {
+  position: relative;
+}
+.monsta-x-top-wrapper .cover-img a {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 24px;
+  border: none;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+.monsta-x-top-wrapper .cover-img img {
+  width: 100%;
+}
+.monsta-x-top-wrapper .top-text {
+  font-size: 30px;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .monsta-x-top-wrapper .pc-only {
+    display: inline-block;
+  }
+  .monsta-x-top-wrapper .sp-only {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .monsta-x-top-wrapper .pc-only {
+    display: none;
+  }
+  .monsta-x-top-wrapper .sp-only {
+    display: inline-block;
+  }
+  .monsta-x-top-wrapper .cover-img {
+    margin-bottom: 60px;
+  }
+  .monsta-x-top-wrapper .cover-img a {
+    top: 120%;
+    width: 80%;
+    font-size: 16px;
+    border: white solid 1px;
+  }
+  .monsta-x-top-wrapper .top-text {
+    font-size: 16px;
+  }
+}
+
+.alert-text {
+  color: #C30000;
+  font-size: 14px;
+}
+
+.warning-text {
+  color: #666666;
+  font-size: 10px;
+}
