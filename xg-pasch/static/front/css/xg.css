@@ -1462,6 +1462,10 @@ div.pasch-box-bottom div.pasch-box-bottom-option {
   }
 }
 
+.modal-link:hover {
+  text-decoration: none;
+}
+
 .modal-img {
   max-width: 440px;
   margin: 0 auto 24px;
