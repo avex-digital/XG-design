@@ -1449,7 +1449,7 @@ div.pasch-box-bottom div.pasch-box-bottom-option {
   width: 80%;
   transform: translate(-50%,-50%);
   max-width: 700px;
-  padding: 40px 30px;
+  padding: 10px 30px;
   background-color: #000000;
   color: #ffffff;
   border-radius: 8px;
@@ -1514,7 +1514,7 @@ div.pasch-box-bottom div.pasch-box-bottom-option {
 
 .close-modal {
   position: absolute;
-  top: -40px;
+  top: -30px;
   right: 0;
   cursor: pointer;
   display: block;
