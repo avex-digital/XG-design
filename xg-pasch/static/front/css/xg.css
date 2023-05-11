@@ -20,7 +20,7 @@ a.btn-link {
 
 .pasch-main {
   max-width: initial !important;
-  min-height: calc(100vh - 134px);
+  min-height: calc(100vh - 164px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -725,7 +725,7 @@ div.fc-top {
   color: #ffffff;
 }
 div.fc-top .top-contents {
-  margin: 20px auto 40px auto;
+  margin: 0 auto 40px auto;
 }
 div.fc-top .main-img {
   margin-bottom: 40px;
@@ -1449,7 +1449,7 @@ div.pasch-box-bottom div.pasch-box-bottom-option {
   width: 80%;
   transform: translate(-50%,-50%);
   max-width: 700px;
-  padding: 40px 30px;
+  padding: 10px 30px;
   background-color: #000000;
   color: #ffffff;
   border-radius: 8px;
@@ -1514,7 +1514,7 @@ div.pasch-box-bottom div.pasch-box-bottom-option {
 
 .close-modal {
   position: absolute;
-  top: -40px;
+  top: -30px;
   right: 0;
   cursor: pointer;
   display: block;
